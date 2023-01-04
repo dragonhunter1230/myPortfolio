@@ -1,6 +1,6 @@
 import React from "react";
-import IMG1 from "../../assets/Educational Website.jpg";
-import IMG2 from "../../assets/RubyCode Blog Project.jpg";
+import IMG1 from "../../assets/project1.png";
+import IMG2 from "../../assets/project2.png";
 import IMG3 from "../../assets/Startup Agency Project.jpg";
 import IMG4 from "../../assets/Covid-19 Project.jpg";
 import IMG5 from "../../assets/Jokes Project.jpg";
@@ -12,35 +12,25 @@ const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: "Educational Website with React.js",
+      title: "Products-Care Be Well Website with React.js",
       img: IMG1,
       description:
-        "An educational website is a huge interactive platform to present various information for people.",
-      technologies: "Html | CSS | Javascript | React Js",
-      link: "https://educational-website-reactjs.netlify.app/",
+        "An Care Be Well Website is an electronic store website to service various prodducts for people.",
+      technologies: "React Js | Node Js | CSS",
+      link: "https://carebewell.com/shop",
       github: "https://github.com/Rasif-Taghizada/Educational-Website-ReactJs",
     },
     {
       id: 2,
-      title: "Covid-19 Tracking App",
-      img: IMG4,
-      description:
-        "The COVID Tracking Project collects and publishes the most complete testing data available for all areas of the world.",
-      technologies: "React | Redux",
-      link: "https://covid-19-tracker-weld-nu.vercel.app/",
-      github: "https://github.com/Rasif-Taghizada/Covid-19-Tracking",
-    },
-    {
-      id: 3,
-      title: "RubyCode Blog Project",
+      title: "Fishing Kayak Accessories-Fishing & Boating Project",
       img: IMG2,
-      description: "This site is a kind of social media platform. You can register and share your posts.",
-      technologies: "React | Redux",
-      link: "https://github.com/Rasif-Taghizada/RubyCode-Blog",
+      description: "This site is a kind of platform for recreation. You can register and reserve your fishing , boating and so on.",
+      technologies: "Next JS | Spring Boot | Node Js",
+      link: "https://www.getwetoutdoors.com.au",
       github: "https://github.com/Rasif-Taghizada/RubyCode-Blog",
     },
     {
-      id: 4,
+      id: 3,
       title: "Startup Landing Page",
       img: IMG3,
       description:
@@ -48,6 +38,15 @@ const Portfolio = () => {
       technologies: "Html | CSS | JavaScript | Next Js",
       link: "https://alpha-agency-project.vercel.app/",
       github: "https://github.com/Rasif-Taghizada/Alpha-Agency-Project",
+    },
+    {
+      id: 4,
+      title: "Covid-19 Tracking App",
+      img: IMG4,
+      description:
+        "The COVID Tracking Project collects and publishes the most complete testing data available for all areas of the world.",
+      technologies: "React | Redux",
+      link: "https://www.getwetoutdoors.com.au",
     },
     {
       id: 5,
@@ -89,20 +88,12 @@ const Portfolio = () => {
             </div>
             <div className="portfolio__item-cta">
               <a
-                href={pro.github}
-                target="_blank"
-                className="btn"
-                rel="noreferrer"
-              >
-                GitHub
-              </a>
-              <a
                 href={pro.link}
                 target="_blank"
                 className="btn btn-primary"
                 rel="noreferrer"
               >
-                Live Demo
+                View Project
               </a>
             </div>
           </article>
